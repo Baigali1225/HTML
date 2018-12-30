@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+	 	.warp{
+	 		width: 200px;
+	 		height: 200px;
+	 		margin: 330px auto;
+	 		/*border: 5px solid black;*/
+	 		/*perspective-origin: bottom left;*/
+	 		perspective: 800px;
+	 		transform: scale(2.5);
+
+
+	 	}
+	 	
+		.box{
+			width: 100px;
+			height: 100px;
+			/*border: 1px solid;*/
+			margin:50px;
+			position: relative;
+			transform-style: preserve-3d;
+			transition:all 360s;
+			transform-origin: center center 50px;
+
+			
+
+		}
+		.box div{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			text-align: center;
+			line-height: 100px;
+			border: 1px solid rgb(0,0,128);
+
+		}
+		.d1{
+			top:-100px;
+			transform-origin: bottom;
+			transform: rotateX(-90deg);
+		}
+		.d2{
+			left: -100px;
+			transform-origin: right;
+			transform: rotateY(90deg);
+		}
+		.d5{
+			top: 100px;
+			transform-origin: top;
+			transform: rotateX(90deg);
+		}
+		.d4{
+			left: 100px;
+			transform-origin: left;
+			transform: rotateY(-90deg);
+		}
+		.d6{
+			transform: translateZ(100px);
+		}
+		.box:hover{
+			transform: rotateY(36000deg) rotateX(36000deg);
+		}
+
+	/*	.d1,.d2,.d3,.d4,.d5,.d6{
+			background: url(./Stars.jpg) 0px 0px;
+		*/
+		.box img{
+			width: 100px;
+			height: 100px;
+			padding: 0px;
+			margin: 0px;
+		}		
+
+	
+			
+		}
+		.bottomImg{
+			padding: 0px;
+			margin: 0px;
+
+		}
+		.bottomImg img{
+			width: 1500px;
+			margin-top: -650px;
+			padding: -100px;
+			
+
+
+		}
+		</style>
+</head>
+<body>		
+<div class="warp">
+	<div class="box" >
+		<div class="d1"><img src="./Stars.jpg"></div>
+		
+		<div class="d2"><img src="./Stars.jpg"></div>
+		
+		<div class="d3"><img src="./Stars.jpg"></div>
+		
+		<div class="d4"><img src="./Stars.jpg"></div>
+		
+		<div class="d5"><img src="./Stars.jpg"></div>
+		
+		<div class="d6"><img src="./Stars.jpg"></div>
+	</div>
+	
+</div>
+<div class="bottomImg"><img src="./left.jpg"></div> 
+
+</body>
+</html>
